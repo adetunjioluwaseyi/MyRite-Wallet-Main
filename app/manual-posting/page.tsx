@@ -28,7 +28,7 @@ export default function ManualPosting() {
 
     try {
       // Replace this URL with the exact Next.js API route path you created
-      const res = await fetch("/api/admin/funds/manual", {
+      const res = await fetch("/api/manual-posting", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -86,7 +86,7 @@ export default function ManualPosting() {
             <div className="mb-4">
               <label className="block text-sm font-medium mb-1">Amount</label>
               <input
-                type="number"
+                type="text"
                 step="any"
                 placeholder="e.g. 5000"
                 className="w-full border px-3 py-2 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
